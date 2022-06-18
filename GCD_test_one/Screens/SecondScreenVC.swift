@@ -8,10 +8,18 @@
 import UIKit
 
 class SecondScreenVC: UIViewController {
+    
+    var imageView = UserImage(frame: .zero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPink
+        configure()
     }
+    
+    private func configure() {
+        view.backgroundColor = .systemBackground
+        view.setImageView(view: view, imageView: imageView)
+    }
+    
  
 }

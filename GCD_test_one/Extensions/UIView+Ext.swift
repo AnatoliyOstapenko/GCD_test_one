@@ -11,7 +11,7 @@ fileprivate let padding: CGFloat = 50
 
 extension UIView {
     
-    // MARK: - First Screen Layout
+    // MARK: - FirstScreenVC Layout
     
     func setActionButton(view: UIView, button: UIButton) {
         view.addSubview(button)
@@ -21,6 +21,20 @@ extension UIView {
             button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
             button.heightAnchor.constraint(equalToConstant: padding)
+        ])
+    }
+    
+    // MARK: - SecondScreenVC Layuout
+    
+    func setImageView(view: UIView, imageView: UIImageView) {
+        view.addSubview(imageView)
+        imageView.contentMode = .scaleAspectFit
+        
+        NSLayoutConstraint.activate([
+            imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: padding),
+            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            imageView.heightAnchor.constraint(equalToConstant: padding * 5)
         ])
     }
     
