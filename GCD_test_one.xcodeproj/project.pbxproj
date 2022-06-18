@@ -15,6 +15,7 @@
 		BC80C495285E15960038F41B /* SecondScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C494285E15960038F41B /* SecondScreenVC.swift */; };
 		BC80C499285E1C2F0038F41B /* InitialNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C498285E1C2F0038F41B /* InitialNavController.swift */; };
 		BC80C49D285E1E490038F41B /* FirstScreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C49C285E1E490038F41B /* FirstScreenButton.swift */; };
+		BC80C4A0285E22F30038F41B /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C49F285E22F30038F41B /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BC80C494285E15960038F41B /* SecondScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenVC.swift; sourceTree = "<group>"; };
 		BC80C498285E1C2F0038F41B /* InitialNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialNavController.swift; sourceTree = "<group>"; };
 		BC80C49C285E1E490038F41B /* FirstScreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenButton.swift; sourceTree = "<group>"; };
+		BC80C49F285E22F30038F41B /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				BC80C496285E15A60038F41B /* Screens */,
 				BC80C49A285E1C470038F41B /* Custom Views */,
+				BC80C4A1285E23090038F41B /* Extensions */,
 				BC80C497285E15EA0038F41B /* Support */,
 				BC80C489285E14900038F41B /* Assets.xcassets */,
 				BC80C48B285E14900038F41B /* LaunchScreen.storyboard */,
@@ -111,6 +114,14 @@
 				BC80C49C285E1E490038F41B /* FirstScreenButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		BC80C4A1285E23090038F41B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC80C49F285E22F30038F41B /* UIView+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 				BC80C495285E15960038F41B /* SecondScreenVC.swift in Sources */,
 				BC80C49D285E1E490038F41B /* FirstScreenButton.swift in Sources */,
 				BC80C485285E148D0038F41B /* FirstScreenVC.swift in Sources */,
+				BC80C4A0285E22F30038F41B /* UIView+Ext.swift in Sources */,
 				BC80C481285E148D0038F41B /* AppDelegate.swift in Sources */,
 				BC80C483285E148D0038F41B /* SceneDelegate.swift in Sources */,
 			);

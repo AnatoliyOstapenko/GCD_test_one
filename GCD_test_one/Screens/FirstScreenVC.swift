@@ -8,10 +8,16 @@
 import UIKit
 
 class FirstScreenVC: UIViewController {
+    
+    let actionButton = FirstScreenButton(title: "Go to the next screen", backgroundColor: .systemCyan)
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+    }
+    
+    private func configure() {
+        
     }
 
 
