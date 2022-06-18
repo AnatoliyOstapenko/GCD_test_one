@@ -7,14 +7,24 @@
 
 import UIKit
 
-class UIView_Ext: UIView {
+fileprivate let padding: CGFloat = 50
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+extension UIView {
+    
+    // MARK: - First Screen Layout
+    
+    func setActionButton(view: UIView, button: UIButton) {
+        view.addSubview(button)
+        
+        NSLayoutConstraint.activate([
+            button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -padding * 2),
+            button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            button.heightAnchor.constraint(equalToConstant: padding)
+        ])
     }
-    */
+    
+
+
 
 }

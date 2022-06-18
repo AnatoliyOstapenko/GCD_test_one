@@ -13,11 +13,17 @@ class FirstScreenVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configure()
     }
     
     private func configure() {
-        
+        view.setActionButton(view: view, button: actionButton)
+        actionButton.addTarget(self, action: #selector(actionButtonPressed), for: .touchUpInside)
+    }
+    
+    @objc func actionButtonPressed() {
+        let secondVC = SecondScreenVC()
+        navigationController?.pushViewController(secondVC, animated: true)
     }
 
 

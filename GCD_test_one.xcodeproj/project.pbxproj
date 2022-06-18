@@ -16,6 +16,8 @@
 		BC80C499285E1C2F0038F41B /* InitialNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C498285E1C2F0038F41B /* InitialNavController.swift */; };
 		BC80C49D285E1E490038F41B /* FirstScreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C49C285E1E490038F41B /* FirstScreenButton.swift */; };
 		BC80C4A0285E22F30038F41B /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C49F285E22F30038F41B /* UIView+Ext.swift */; };
+		BC80C4A3285E2AFE0038F41B /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C4A2285E2AFE0038F41B /* UserImage.swift */; };
+		BC80C4A6285E2C4D0038F41B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C4A5285E2C4D0038F41B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		BC80C498285E1C2F0038F41B /* InitialNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialNavController.swift; sourceTree = "<group>"; };
 		BC80C49C285E1E490038F41B /* FirstScreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenButton.swift; sourceTree = "<group>"; };
 		BC80C49F285E22F30038F41B /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		BC80C4A2285E2AFE0038F41B /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
+		BC80C4A5285E2C4D0038F41B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 				BC80C496285E15A60038F41B /* Screens */,
 				BC80C49A285E1C470038F41B /* Custom Views */,
 				BC80C4A1285E23090038F41B /* Extensions */,
+				BC80C4A7285E2C510038F41B /* Utilities */,
 				BC80C497285E15EA0038F41B /* Support */,
 				BC80C489285E14900038F41B /* Assets.xcassets */,
 				BC80C48B285E14900038F41B /* LaunchScreen.storyboard */,
@@ -96,6 +101,7 @@
 			children = (
 				BC80C49B285E1C5B0038F41B /* Navigation Controllers */,
 				BC80C49E285E1E5D0038F41B /* Buttons */,
+				BC80C4A4285E2B110038F41B /* Images */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -122,6 +128,22 @@
 				BC80C49F285E22F30038F41B /* UIView+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC80C4A4285E2B110038F41B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BC80C4A2285E2AFE0038F41B /* UserImage.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		BC80C4A7285E2C510038F41B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BC80C4A5285E2C4D0038F41B /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +220,11 @@
 				BC80C495285E15960038F41B /* SecondScreenVC.swift in Sources */,
 				BC80C49D285E1E490038F41B /* FirstScreenButton.swift in Sources */,
 				BC80C485285E148D0038F41B /* FirstScreenVC.swift in Sources */,
+				BC80C4A3285E2AFE0038F41B /* UserImage.swift in Sources */,
 				BC80C4A0285E22F30038F41B /* UIView+Ext.swift in Sources */,
 				BC80C481285E148D0038F41B /* AppDelegate.swift in Sources */,
 				BC80C483285E148D0038F41B /* SceneDelegate.swift in Sources */,
+				BC80C4A6285E2C4D0038F41B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
