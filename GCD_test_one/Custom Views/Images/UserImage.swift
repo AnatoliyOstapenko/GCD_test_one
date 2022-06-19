@@ -26,7 +26,11 @@ class UserImage: UIImageView {
     }
     
     func setImage() {
-        
+        NetworkManager.shared.fetchImage { [weak self] image in
+            DispatchQueue.main.async {
+                self?.image = image
+            }
+        }
     }
     
 }

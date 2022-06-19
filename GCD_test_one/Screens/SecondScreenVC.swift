@@ -21,5 +21,10 @@ class SecondScreenVC: UIViewController {
         view.setImageView(view: view, imageView: imageView)
     }
     
+    func updateUI() {
+        
+    }
+    
+    
  
 }
