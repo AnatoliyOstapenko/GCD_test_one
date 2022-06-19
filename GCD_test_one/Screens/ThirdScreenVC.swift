@@ -25,7 +25,7 @@ class ThirdScreenVC: DataLoadingVC {
         super.viewDidLoad()
         configure()
         getSlowImage()
-
+        loginAlert()
     }
     
     private func configure() {
@@ -33,6 +33,26 @@ class ThirdScreenVC: DataLoadingVC {
         slowImageView.contentMode = .scaleAspectFit
         slowImageView.translatesAutoresizingMaskIntoConstraints = false
         view.setImageView(view: view, imageView: slowImageView)
+        
+    }
+    
+    private func loginAlert() {
+        let alert = UIAlertController(title: Constants.alertTitle, message: Constants.alertText, preferredStyle: .alert)
+        
+        let okButton = UIAlertAction(title: Constants.ok, style: .destructive, handler: nil)
+        let cancelButton = UIAlertAction(title: Constants.cancel, style: .cancel, handler: nil)
+        
+        alert.addAction(okButton)
+        alert.addAction(cancelButton)
+        
+        alert.addTextField { userTextField in
+            userTextField.placeholder = Constants.userPlaceholder
+        }
+        alert.addTextField { passwordTextField in
+            passwordTextField.placeholder = Constants.passwordPlaceholder
+            passwordTextField.isSecureTextEntry = true
+        }
+        self.present(alert, animated: true, completion: nil)
     }
     
     private func getSlowImage() {
