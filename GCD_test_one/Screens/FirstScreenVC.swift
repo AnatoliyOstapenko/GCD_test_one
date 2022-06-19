@@ -21,18 +21,18 @@ class FirstScreenVC: UIViewController {
         view.setFastButton(view: view, button: fastButton)
         view.setSlowButton(view: view, button: slowButton)
         fastButton.addTarget(self, action: #selector(fastButtonPressed), for: .touchUpInside)
+        slowButton.addTarget(self, action: #selector(slowButtonPressed), for: .touchUpInside)
     }
     
     @objc func fastButtonPressed() {
-        let secondVC = SecondScreenVC()
-        navigationController?.pushViewController(secondVC, animated: true)
+        let vc = SecondScreenVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc func slowButtonPressed() {
-        let secondVC = SecondScreenVC()
-        navigationController?.pushViewController(secondVC, animated: true)
+        let vc = ThirdScreenVC()
+        navigationController?.pushViewController(vc, animated: true)
     }
-
-
 }
+
 

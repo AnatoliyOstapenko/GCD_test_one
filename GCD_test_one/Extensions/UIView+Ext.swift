@@ -36,7 +36,7 @@ extension UIView {
     }
     
     
-    // MARK: - SecondScreenVC Layuout
+    // MARK: - SecondScreenVC and ThirdScreenVC Layuout
     
     func setImageView(view: UIView, imageView: UIImageView) {
         view.addSubview(imageView)
@@ -49,7 +49,7 @@ extension UIView {
             imageView.heightAnchor.constraint(equalToConstant: padding * 5)
         ])
     }
-    
+
 
 
 
