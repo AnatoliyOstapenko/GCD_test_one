@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ThirdScreenVC: UIViewController {
+class ThirdScreenVC: DataLoadingVC {
     
     let slowImageView = UIImageView()
     private var imageURL: URL?
@@ -16,6 +16,7 @@ class ThirdScreenVC: UIViewController {
             return slowImageView.image
         }
         set {
+            spinnerDeactivated()
             slowImageView.image = newValue
         }
     }
@@ -36,8 +37,16 @@ class ThirdScreenVC: UIViewController {
     
     private func getSlowImage() {
         imageURL = URL(string: Constants.imageURL)
-        guard let url = imageURL, let imageData = try? Data(contentsOf: url) else { return }
-        self.image = UIImage(data: imageData)
+        spinnerActivated()
+        // create queue, choose global, set priority to utility
+        let queue = DispatchQueue.global(qos: .utility)
+        
+        // set queue as async method
+        queue.async {
+            guard let url = self.imageURL, let imageData = try? Data(contentsOf: url) else { return }
+            DispatchQueue.main.async {
+                self.image = UIImage(data: imageData)
+            }
+        }
     }
-    
 }
