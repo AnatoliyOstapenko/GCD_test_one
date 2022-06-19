@@ -19,6 +19,7 @@
 		BC80C4A3285E2AFE0038F41B /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C4A2285E2AFE0038F41B /* UserImage.swift */; };
 		BC80C4A6285E2C4D0038F41B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C4A5285E2C4D0038F41B /* Constants.swift */; };
 		BC80C4A9285E3C820038F41B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C4A8285E3C820038F41B /* NetworkManager.swift */; };
+		BC80C4AC285F50560038F41B /* ThirdScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C4AB285F50560038F41B /* ThirdScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		BC80C4A2285E2AFE0038F41B /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
 		BC80C4A5285E2C4D0038F41B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BC80C4A8285E3C820038F41B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BC80C4AB285F50560038F41B /* ThirdScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				BC80C484285E148D0038F41B /* FirstScreenVC.swift */,
 				BC80C494285E15960038F41B /* SecondScreenVC.swift */,
+				BC80C4AB285F50560038F41B /* ThirdScreenVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC80C4AC285F50560038F41B /* ThirdScreenVC.swift in Sources */,
 				BC80C499285E1C2F0038F41B /* InitialNavController.swift in Sources */,
 				BC80C495285E15960038F41B /* SecondScreenVC.swift in Sources */,
 				BC80C4A9285E3C820038F41B /* NetworkManager.swift in Sources */,

@@ -14,6 +14,7 @@ class SecondScreenVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
+        updateUI()
     }
     
     private func configure() {
@@ -22,7 +23,7 @@ class SecondScreenVC: UIViewController {
     }
     
     func updateUI() {
-        
+        imageView.setImage()
     }
     
     

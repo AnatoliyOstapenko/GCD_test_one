@@ -9,7 +9,8 @@ import UIKit
 
 class FirstScreenVC: UIViewController {
     
-    let actionButton = FirstScreenButton(title: "Go to the next screen", backgroundColor: .systemCyan)
+    let fastButton = FirstScreenButton(title: "Go to fast way", backgroundColor: .systemCyan)
+    let slowButton = FirstScreenButton(title: "Go to slow way", backgroundColor: .systemPink)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,11 +18,17 @@ class FirstScreenVC: UIViewController {
     }
     
     private func configure() {
-        view.setActionButton(view: view, button: actionButton)
-        actionButton.addTarget(self, action: #selector(actionButtonPressed), for: .touchUpInside)
+        view.setFastButton(view: view, button: fastButton)
+        view.setSlowButton(view: view, button: slowButton)
+        fastButton.addTarget(self, action: #selector(fastButtonPressed), for: .touchUpInside)
     }
     
-    @objc func actionButtonPressed() {
+    @objc func fastButtonPressed() {
+        let secondVC = SecondScreenVC()
+        navigationController?.pushViewController(secondVC, animated: true)
+    }
+    
+    @objc func slowButtonPressed() {
         let secondVC = SecondScreenVC()
         navigationController?.pushViewController(secondVC, animated: true)
     }

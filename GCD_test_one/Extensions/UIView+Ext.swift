@@ -13,7 +13,7 @@ extension UIView {
     
     // MARK: - FirstScreenVC Layout
     
-    func setActionButton(view: UIView, button: UIButton) {
+    func setFastButton(view: UIView, button: UIButton) {
         view.addSubview(button)
         
         NSLayoutConstraint.activate([
@@ -23,6 +23,18 @@ extension UIView {
             button.heightAnchor.constraint(equalToConstant: padding)
         ])
     }
+    
+    func setSlowButton(view: UIView, button: UIButton) {
+        view.addSubview(button)
+        
+        NSLayoutConstraint.activate([
+            button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -padding * 4),
+            button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            button.heightAnchor.constraint(equalToConstant: padding)
+        ])
+    }
+    
     
     // MARK: - SecondScreenVC Layuout
     
