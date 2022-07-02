@@ -34,6 +34,13 @@ class DataLoadingVC: UIViewController {
             self.container = nil
         }
     }
+    
+    // Delay method
+    func delay(seconds delay: Int, completion: @escaping() -> Void) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(delay)) {
+            completion()
+        }
+    }
 
 
 }

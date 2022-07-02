@@ -25,7 +25,7 @@ class ThirdScreenVC: DataLoadingVC {
         super.viewDidLoad()
         configure()
         getSlowImage()
-        loginAlert()
+        delay(seconds: 2) { self.loginAlert() }
     }
     
     private func configure() {
@@ -54,6 +54,7 @@ class ThirdScreenVC: DataLoadingVC {
         }
         self.present(alert, animated: true, completion: nil)
     }
+    
     
     private func getSlowImage() {
         imageURL = URL(string: Constants.imageURL)

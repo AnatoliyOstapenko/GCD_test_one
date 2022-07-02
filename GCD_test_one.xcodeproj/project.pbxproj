@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1605932868BC0300850180 /* SizeClassesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1605922868BC0300850180 /* SizeClassesVC.swift */; };
 		BC80C481285E148D0038F41B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C480285E148D0038F41B /* AppDelegate.swift */; };
 		BC80C483285E148D0038F41B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C482285E148D0038F41B /* SceneDelegate.swift */; };
 		BC80C485285E148D0038F41B /* FirstScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC80C484285E148D0038F41B /* FirstScreenVC.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC1605922868BC0300850180 /* SizeClassesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClassesVC.swift; sourceTree = "<group>"; };
 		BC80C47D285E148D0038F41B /* GCD_test_one.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCD_test_one.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC80C480285E148D0038F41B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC80C482285E148D0038F41B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				BC80C484285E148D0038F41B /* FirstScreenVC.swift */,
 				BC80C494285E15960038F41B /* SecondScreenVC.swift */,
 				BC80C4AB285F50560038F41B /* ThirdScreenVC.swift */,
+				BC1605922868BC0300850180 /* SizeClassesVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				BC80C4AE285F5F3F0038F41B /* DataLoadingVC.swift in Sources */,
 				BC80C4A9285E3C820038F41B /* NetworkManager.swift in Sources */,
 				BC80C49D285E1E490038F41B /* FirstScreenButton.swift in Sources */,
+				BC1605932868BC0300850180 /* SizeClassesVC.swift in Sources */,
 				BC80C485285E148D0038F41B /* FirstScreenVC.swift in Sources */,
 				BC80C4A3285E2AFE0038F41B /* UserImage.swift in Sources */,
 				BC80C4A0285E22F30038F41B /* UIView+Ext.swift in Sources */,

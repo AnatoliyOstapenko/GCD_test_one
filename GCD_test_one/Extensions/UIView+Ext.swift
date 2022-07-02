@@ -35,6 +35,17 @@ extension UIView {
         ])
     }
     
+    func setSCButton(view: UIView, button: UIButton) {
+        view.addSubview(button)
+        
+        NSLayoutConstraint.activate([
+            button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -padding * 6),
+            button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            button.heightAnchor.constraint(equalToConstant: padding)
+        ])
+    }
+    
     
     // MARK: - SecondScreenVC and ThirdScreenVC Layuout
     
